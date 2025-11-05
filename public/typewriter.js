@@ -5,8 +5,7 @@ function init() {
       "passionate about Python.", 
       "silly about Simulink.", 
       "an F1 nerd.", 
-      "average at tennis.", 
-      "building useless stuff for fun."];
+      "average at tennis."];
       
     let textBox = document.querySelector('.text');
 
