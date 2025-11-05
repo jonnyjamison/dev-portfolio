@@ -1,17 +1,17 @@
 export const siteConfig = {
   name: "Jonny Jamison",
-  title: "Senior Software Engineer",
+  title: "Modelling, Simulation & Toolset Engineer",
   description: "Portfolio website of Jonny Jamison",
-  accentColor: "#1d4ed8",
+  accentColor: "#00ff00",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/jonnyjamison",
-    github: "https://github.com/JonnyJamison",
+    email: "jonny.jamison@outlook.com",
+    linkedin: "https://www.linkedin.com/in/jonnyjamison",
+    github: "https://github.com/jonnyjamison",
+    leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  skills: ["Python", "MATLAB", "Simulink", "TensorFlow", "AWS", "Docker"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
