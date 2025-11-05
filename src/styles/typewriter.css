@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+h1.heading {
+  /* Use Astro-specific selectors to override */
+  font-family: "Fira Code", monospace;
+  position: relative;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;
+  overflow: hidden;
+  letter-spacing: 1px;
+  padding: 20px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.text {
+  color: #000000;
+  display: inline;
+}
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #00ff00;
+  margin-left: 3px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.heading .text.selected {
+  background-color: #00ff00;
+  color: #000000;
+}
