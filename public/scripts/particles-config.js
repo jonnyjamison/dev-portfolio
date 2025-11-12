@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "value": 100,
         "density": { "enable": true, "value_area": 1000 }
       },
-      "color": { "value": "#2e2e2e" },
+      "color": { "value": "#00ff00" },
       "shape": {
         "type": "circle",
-        "stroke": { "width": 0, "color": "#000" }
+        "stroke": { "width": 0.1, "color": "#000" }
       },
-      "opacity": { "value": 0.05 },
+      "opacity": { "value": 0.1},
       "size": { "value": 3, "random": true },
       "line_linked": {
         "enable": true,

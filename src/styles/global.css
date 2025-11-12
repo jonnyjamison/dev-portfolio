@@ -5,12 +5,13 @@ body {
 }
 
 #particles-js {
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -50;         /* behind ALL page content */
+  pointer-events: none; /* prevents blocking clicks */
 }
 
 #particles-js canvas {
