@@ -23,8 +23,8 @@ particlesJS("particles-hero", {
     },
     line_linked: {
       enable: true,
-      distance: 120,
-      opacity: 0.22,
+      distance: 80,
+      opacity: 0.9,
       color: "#00ff00",
       width: 1,
     },
