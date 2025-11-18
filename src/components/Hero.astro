@@ -9,51 +9,85 @@ import "../styles/typewriter.css";
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
 
-  <!-- PARTICLES BACKGROUND (behind everything, but only inside Hero) -->
-  <div id="particles-js" class="absolute inset-0 w-full h-full -z-30 pointer-events-none"></div>
-
-  <!-- Gradient Overlay -->
+  <!-- Particles on top-left -->
   <div
-    class="absolute inset-0 -z-20"
-    style={`background: radial-gradient(
-      ellipse 900px 1400px at 0% 0%,
-      ${siteConfig.accentColor}40 0%,
-      ${siteConfig.accentColor}25 20%,
-      ${siteConfig.accentColor}10 40%,
-      rgba(255, 255, 255, 0.3) 70%,
-      rgba(255, 255, 255, 0.8) 90%,
-      white 100%
-    )`}
+    id="particles-hero"
+    class="absolute z-10"
+    style="
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 60vh;
+    "
   ></div>
 
-  <!-- Pattern Background -->
+  <!-- Corrected green gradient, now visible again -->
+  <div
+    class="absolute z-0"
+    style={`
+      top: 0;
+      left: 0;
+      width: 80vw;
+      height: 100vh;
+      background: radial-gradient(
+        circle at top left,
+        ${siteConfig.accentColor}60 0%,
+        ${siteConfig.accentColor}30 28%,
+        ${siteConfig.accentColor}15 52%,
+        rgba(255,255,255,0) 78%,
+        transparent 100%
+      );
+      /* combine a radial mask with a horizontal (longitudinal) fade
+         so the colour softens toward the right edge of the hero */
+      mask-image: radial-gradient(
+          circle at top left,
+          rgba(0,0,0,1) 0%,
+          rgba(0,0,0,0.9) 22%,
+          rgba(0,0,0,0.6) 45%,
+          rgba(0,0,0,0.15) 70%,
+          rgba(0,0,0,0) 100%
+        ),
+        linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+      -webkit-mask-image: radial-gradient(
+          circle at top left,
+          rgba(0,0,0,1) 0%,
+          rgba(0,0,0,0.9) 22%,
+          rgba(0,0,0,0.6) 45%,
+          rgba(0,0,0,0.15) 70%,
+          rgba(0,0,0,0) 100%
+        ),
+        linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+    `}
+  ></div>
+
+  <!-- Pattern Layer (bottom layer) -->
   <svg
     aria-hidden="true"
-    class="absolute inset-0 -z-10 w-full h-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    class="absolute inset-0 -z-20 w-full h-full stroke-gray-200
+           [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
   >
     <defs>
-      <pattern id="programming-symbols" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
-        <text x="50" y="50" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(-15)">&lt;/&gt;</text>
-        <text x="150" y="100" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(10)">{}</text>
-        <text x="250" y="80" fill={siteConfig.accentColor} font-family="monospace" font-size="18" transform="rotate(-5)">=&gt;</text>
-        <text x="100" y="200" fill={siteConfig.accentColor} font-family="monospace" font-size="22" transform="rotate(15)">[]</text>
-        <text x="300" y="180" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(-10)">&lt;&gt;</text>
-        <text x="200" y="250" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(5)">()</text>
-        <text x="50" y="320" fill={siteConfig.accentColor} font-family="monospace" font-size="18" transform="rotate(-8)">::</text>
-        <text x="350" y="300" fill={siteConfig.accentColor} font-family="monospace" font-size="22" transform="rotate(12)">==</text>
-        <text x="150" y="350" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(-15)">++</text>
-        <text x="250" y="370" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(8)">;</text>
+      <pattern id="symbols" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
+        <text x="50" y="50" fill={siteConfig.accentColor} font-family="monospace" font-size="24">&lt;/&gt;</text>
+        <text x="150" y="100" fill={siteConfig.accentColor} font-family="monospace" font-size="20">{}</text>
+        <text x="250" y="80" fill={siteConfig.accentColor} font-family="monospace" font-size="18">=&gt;</text>
+        <text x="100" y="200" fill={siteConfig.accentColor} font-family="monospace" font-size="22">[]</text>
+        <text x="300" y="180" fill={siteConfig.accentColor} font-family="monospace" font-size="20">&lt;&gt;</text>
+        <text x="200" y="250" fill={siteConfig.accentColor} font-family="monospace" font-size="24">()</text>
+        <text x="50" y="320" fill={siteConfig.accentColor} font-family="monospace" font-size="18">::</text>
+        <text x="350" y="300" fill={siteConfig.accentColor} font-family="monospace" font-size="22">==</text>
+        <text x="150" y="350" fill={siteConfig.accentColor} font-family="monospace" font-size="20">++</text>
+        <text x="250" y="370" fill={siteConfig.accentColor} font-family="monospace" font-size="24">;</text>
       </pattern>
     </defs>
-
-    <rect fill="url(#programming-symbols)" width="100%" height="100%" opacity="0.2"></rect>
+    <rect fill="url(#symbols)" width="100%" height="100%" opacity="0.18"></rect>
   </svg>
 
-  <!-- HERO CONTENT -->
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center relative z-20">
+  <!-- Hero Content -->
+  <div class="relative z-20 h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
     <div>
-      <h2 class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in">
-        Hello! 👋
+      <h2 class="text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in">
+        Hello. 👋
       </h2>
 
       <h1 class="heading -ml-4 md:-ml-6">
@@ -62,36 +96,47 @@ import "../styles/typewriter.css";
         <span class="cursor"></span>
       </h1>
 
-      <p class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400">
+      <p class="mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl font-medium text-gray-600 animate-fade-in animation-delay-400">
         {siteConfig.title}
       </p>
     </div>
   </div>
 
-  <!-- SOCIAL ICONS -->
-  <div class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600 z-20">
+  <!-- Social icons (forced in front) -->
+  <!-- Changed to fixed positioning so icons render above all stacked decoration layers -->
+  <div
+    class="flex gap-x-6 text-gray-900 animate-fade-in animation-delay-600"
+    style="position:fixed; left:1.5rem; bottom:1.5rem; z-index:2147483647; padding:0.375rem 0.5rem; background:rgba(255,255,255,0.9); color:#111827; border-radius:9999px; box-shadow:0 6px 18px rgba(0,0,0,0.12); mix-blend-mode:normal;">
 
     {siteConfig.social?.email && (
-      <a href={`mailto:${siteConfig.social.email}`} aria-label="Email" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"/>
-          <path d="M3 7l9 6l9 -6"/>
+      <a href={`mailto:${siteConfig.social.email}`} class="hover:text-[var(--accent-color)] transition-colors" aria-label={`Email ${siteConfig.name}`}>
+        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="currentColor" role="img" aria-hidden="false">
+          <title>{`Email ${siteConfig.name}`}</title>
+          <path d="M3 7h18v10H3z"/>
+          <path d="M3 7l9 6 9-6"/>
         </svg>
       </a>
     )}
 
     {siteConfig.social?.linkedin && (
-      <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 1 0 -4 0"/><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"/>
+      <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--accent-color)] transition-colors" aria-label={`LinkedIn — ${siteConfig.name}`}>
+        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="currentColor" role="img" aria-hidden="false">
+          <title>{`LinkedIn — ${siteConfig.name}`}</title>
+          <path d="M8 11v5"/>
+          <circle cx="8" cy="8" r="1"/>
+          <path d="M12 16v-5"/>
+          <path d="M16 16v-3a2 2 0 0 0 -4 0"/>
+          <rect x="3" y="3" width="18" height="18" rx="4"/>
         </svg>
       </a>
     )}
 
     {siteConfig.social?.github && (
-      <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+      <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--accent-color)] transition-colors" aria-label={`GitHub — ${siteConfig.name}`}>
+        <svg width="24" height="24" stroke="currentColor" stroke-width="2" fill="currentColor" role="img" aria-hidden="false">
+          <title>{`GitHub — ${siteConfig.name}`}</title>
+          <path d="M9 19c-4 1 -4 -3 -6 -3"/>
+          <path d="M15 22v-3.5a2 2 0 0 0 -.5 -1.5c3 -.5 5.5 -2 5.5 -6a4.5 4.5 0 0 0 -1.3 -3.2a4 4 0 0 0 -.1 -3.2s-1 -.4 -3.5 1.3a12 12 0 0 0 -6 0c-2.5 -1.7 -3.5 -1.3 -3.5 -1.3a4 4 0 0 0 -.1 3.2a4.5 4.5 0 0 0 -1.3 3.2c0 4 2.5 5.5 5.5 6a2 2 0 0 0 -.5 1.5v3.5"/>
         </svg>
       </a>
     )}
@@ -99,12 +144,15 @@ import "../styles/typewriter.css";
   </div>
 
   <!-- Scripts -->
+  <script src="/scripts/particles.min.js" defer></script>
+  <script src="/scripts/particles-hero-config.js" defer></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js" defer></script>
 
   <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
-      if (typeof gsap !== "undefined" && typeof TextPlugin !== "undefined") {
+      if (window.gsap && window.TextPlugin) {
         gsap.registerPlugin(TextPlugin);
       }
     });
@@ -112,25 +160,17 @@ import "../styles/typewriter.css";
 
   <script src="/typewriter.js" defer></script>
 
-  <!-- Particles -->
-  <script src="/scripts/particles.min.js" defer></script>
-  <script src="/scripts/particles-config.js" defer></script>
-
 </div>
 
 <style>
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0. transform: translateY(20px) }
+    to { opacity: 1. transform: translateY(0) }
   }
-  .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
-  .animation-delay-200 { animation-delay: 0.2s; }
-  .animation-delay-400 { animation-delay: 0.4s; }
-  .animation-delay-600 { animation-delay: 0.6s; }
-
-  /* Ensure particles canvas fits inside Hero only */
-  #particles-js canvas {
-    width: 100% !important;
-    height: 100% !important;
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
   }
+  .animation-delay-400 { animation-delay: 0.4s }
+  .animation-delay-600 { animation-delay: 0.6s }
 </style>
