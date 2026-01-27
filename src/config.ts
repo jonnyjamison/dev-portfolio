@@ -44,8 +44,8 @@ export const siteConfig = {
       title: "Virtual Tools & Methods Engineer",
       dateRange: "Aug 2024 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
+        "DEvelop toolset",
+        "Virtual Sensor project",
         "Mentored team of 5 junior developers",
       ],
     },
@@ -62,7 +62,7 @@ export const siteConfig = {
     {
       company: "IPG Automotive",
       title: "Application Engineer",
-      dateRange: "Jan 2021 - Feb 2022",
+      dateRange: "Feb 2021 - Feb 2022",
       bullets: [
         "Developed responsive web applications for 20+ clients",
         "Improved site performance scores by 35% on average",
@@ -87,8 +87,8 @@ export const siteConfig = {
       dateRange: "2020 - 2021",
       achievements: [
         "Graduated with Distinction",
-        "3 modules studied at Masters level, including: Big Data, Machine Learning, and Statistics",
-        "Specialized in React and Node.js",
+        "Scholarship received to further interest of Machine Learning developed during Masters degree",
+        "4 modules studied at Masters level, including: Big Data, Data Mining, Machine Learning, and Statistics",
       ],
     },
   ],
