@@ -10,7 +10,8 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
   id="header"
   class="fixed top-0 left-0 right-0 z-50 hidden md:block transition-all duration-300"
 >
-  <nav class="max-w-7xl mx-auto px-8 py-4">
+  <!-- Centered nav container -->
+  <nav class="relative max-w-7xl mx-auto px-8 py-4">
     <ul class="flex items-center gap-8 justify-center">
       <li>
         <a
@@ -20,54 +21,53 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           About
         </a>
       </li>
-      {
-        hasProjects && (
-          <li>
-            <a
-              href="#projects"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Projects
-            </a>
-          </li>
-        )
-      }
-      {
-        hasExperience && (
-          <li>
-            <a
-              href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Experience
-            </a>
-          </li>
-        )
-      }
-      {
-        hasEducation && (
-          <li>
-            <a
-              href="#education"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Education
-            </a>
-          </li>
-        )
-      }
-      <li>
-        <a
-          href="/j_jamison_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-700 hover:text-black transition-colors font-medium"
-        >
-          Download CV
-        </a>
-      </li>
+
+      {hasProjects && (
+        <li>
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-black transition-colors font-medium"
+          >
+            Projects
+          </a>
+        </li>
+      )}
+
+      {hasExperience && (
+        <li>
+          <a
+            href="#experience"
+            class="text-gray-700 hover:text-black transition-colors font-medium"
+          >
+            Experience
+          </a>
+        </li>
+      )}
+
+      {hasEducation && (
+        <li>
+          <a
+            href="#education"
+            class="text-gray-700 hover:text-black transition-colors font-medium"
+          >
+            Education
+          </a>
+        </li>
+      )}
     </ul>
   </nav>
+
+  <!-- Flush-right CV link -->
+  <div class="absolute right-10 top-1/2 -translate-y-1/2">
+    <a
+      href="/j_jamison_CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-gray-700 hover:text-black transition-colors font-medium"
+    >
+      Download CV
+    </a>
+  </div>
 </header>
 
 <script>

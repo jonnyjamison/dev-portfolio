@@ -44,9 +44,9 @@ export const siteConfig = {
       title: "Virtual Tools & Methods Engineer",
       dateRange: "Aug 2024 - Present",
       bullets: [
-        "DEvelop toolset",
+        "DEvelop toolset - distibuted, best practises",
         "Virtual Sensor project",
-        "Mentored team of 5 junior developers",
+        "Interact with bespoke vehicle model, extract results for high performance applications",
       ],
     },
     {
@@ -54,8 +54,8 @@ export const siteConfig = {
       title: "Modelling and Simulation Engineer",
       dateRange: "Feb 2022 - Aug 2024",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
+        "Build and develop and correlate Digital Twin of vehicle using mathematical modelling",
+        "*link* Help Develop VSI through automation and optimisation scripts",
         "Collaborated with product team to define technical requirements",
       ],
     },
@@ -77,7 +77,7 @@ export const siteConfig = {
       dateRange: "2015 - 2020",
       achievements: [
         "Graduated with First Class Honours",
-        "Global Undergratute Awards Winner & IMechE Outstanding Project Award received for final year project",
+        "*link* Global Undergratute Awards Winner & IMechE Outstanding Project Award received for final year project",
         "Suspension Team Leader & Performance Assistant Team Leader for Queen's Formula Racing FSAE team",
       ],
     },
