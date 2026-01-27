@@ -10,24 +10,24 @@ export const siteConfig = {
     leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
+  "A mechanical engineer with a passion for programming, combining the two through simulation, modelling, and machine-learning-enabled tools. My work spans vehicle dynamics, virtual sensors, and digital twins, bringing engineering models to life with clean, scalable code across professional and personal projects.",
   skills: ["Python", "MATLAB", "Simulink", "TensorFlow", "AWS", "Docker"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Spring-Mass-Damper ML Surogate Model",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-      media: "/media/test_gif.gif"
+        "Project to create a machine-learning based surrogate model of a spring-mass-damper system using PyTorch and deploy it with an interactive web app",
+      link: "https://github.com/jonnyjamison/spring-mass-damper-ML",
+      skills: ["Python", "PyTorch", "Plotly Dash", "Docker"],
+      media: "/media/ml_damper_preview.gif"
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Suspension Kinematics Viewer",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-      media: "/media/test_gif.gif"
+        "GUI to view the suspension hardpoints of a double-wishbone suspension system and visualise features of the geometry",
+      link: "https://github.com/jonnyjamison/KinematicsViewer",
+      skills: ["PyQt", "Python", "Numpy"],
+      media: "/media/kinematics_preview.gif"
     },
     {
       name: "ExtensionKit",
@@ -40,9 +40,9 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "ClearMotion",
+      title: "Virtual Tools & Methods Engineer",
+      dateRange: "Aug 2024 - Present",
       bullets: [
         "Led development of microservices architecture serving 1M+ users",
         "Reduced API response times by 40% through optimization",
@@ -50,9 +50,9 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Rivian",
+      title: "Modelling and Simulation Engineer",
+      dateRange: "Feb 2022 - Aug 2024",
       bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
@@ -60,9 +60,9 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "IPG Automotive",
+      title: "Application Engineer",
+      dateRange: "Jan 2021 - Feb 2022",
       bullets: [
         "Developed responsive web applications for 20+ clients",
         "Improved site performance scores by 35% on average",
@@ -72,22 +72,22 @@ export const siteConfig = {
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "Queen's University Belfast",
+      degree: "Master of Mechanical Engineering",
+      dateRange: "2015 - 2020",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
+        "Graduated with First Class Honours",
+        "Global Undergratute Awards Winner & IMechE Outstanding Project Award received for final year project",
+        "Suspension Team Leader & Performance Assistant Team Leader for Queen's Formula Racing FSAE team",
       ],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "University of Ulster",
+      degree: "Postgraduate Certificate in Aritficial Intelligence",
+      dateRange: "2020 - 2021",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
+        "Graduated with Distinction",
+        "3 modules studied at Masters level, including: Big Data, Machine Learning, and Statistics",
         "Specialized in React and Node.js",
       ],
     },
