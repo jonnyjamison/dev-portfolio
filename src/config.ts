@@ -19,7 +19,7 @@ export const siteConfig = {
         "Project to create a machine-learning based surrogate model of a spring-mass-damper system using PyTorch and deploy it with an interactive web app",
       link: "https://github.com/jonnyjamison/spring-mass-damper-ML",
       skills: ["Python", "PyTorch", "Plotly Dash", "Docker", "FastAPI"],
-      media: "/dev-portfolio/media/ml_damper_preview.gif",
+      media: "media/ml_damper_preview.gif",
     },
     {
       name: "Suspension Kinematics Viewer",
@@ -27,7 +27,7 @@ export const siteConfig = {
         "Development of a Python-based GUI to visualise hardpoints of a double-wishbone suspension system and calculate features of the geometry",
       link: "https://github.com/jonnyjamison/KinematicsViewer",
       skills: ["Python", "PyQt", "Numpy"],
-      media: "/dev-portfolio/media/kinematics_preview.gif",
+      media: "media/kinematics_preview.gif",
     },
     /*
     {
