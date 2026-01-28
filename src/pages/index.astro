@@ -8,8 +8,6 @@ import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
-
-const base = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
@@ -22,8 +20,8 @@ const base = import.meta.env.BASE_URL;
     <title>{siteConfig.name} – {siteConfig.title}</title>
 
     <!-- Scripts for typewriter and particles effects -->
-    <script src={`${base}typewriter.js`} defer></script>
-    <script src={`${base}particles.min.js`} defer></script>
+    <script src="/dev-portfolio/typewriter.js" defer></script>
+    <script src="/dev-portfolio/particles.min.js" defer></script>
   </head>
 
   <body class="relative">
@@ -44,7 +42,7 @@ const base = import.meta.env.BASE_URL;
     <Footer />
 
     <!-- Particles.js -->
-    <script src={`${base}scripts/particles-config.js`} defer></script>
+    <script src="/dev-portfolio/scripts/particles-config.js" defer></script>
 
   </body>
 </html>
