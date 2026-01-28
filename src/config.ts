@@ -10,7 +10,7 @@ export const siteConfig = {
     leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
-  "A mechanical engineer with a passion for programming, combining the two through simulation, modelling, and machine-learning-enabled tools. With 5+ years within fast-paced startups, my work has spanned vehicle dynamics, virtual sensors, and digital twins - in an attempt to make code replicate reality!",
+    "A mechanical engineer with a passion for programming, combining the two through simulation, modelling, and machine-learning-enabled tools. With 5+ years within fast-paced startups, my work has spanned vehicle dynamics, virtual sensors, and digital twins, in an attempt to make code replicate reality!",
   skills: ["Python", "MATLAB", "Simulink", "TensorFlow"],
   projects: [
     {
@@ -19,7 +19,7 @@ export const siteConfig = {
         "Project to create a machine-learning based surrogate model of a spring-mass-damper system using PyTorch and deploy it with an interactive web app",
       link: "https://github.com/jonnyjamison/spring-mass-damper-ML",
       skills: ["Python", "PyTorch", "Plotly Dash", "Docker", "FastAPI"],
-      media: "media/ml_damper_preview.gif"
+      media: "media/ml_damper_preview.gif",
     },
     {
       name: "Suspension Kinematics Viewer",
@@ -27,7 +27,7 @@ export const siteConfig = {
         "Development of a Python-based GUI to visualise hardpoints of a double-wishbone suspension system and calculate features of the geometry",
       link: "https://github.com/jonnyjamison/KinematicsViewer",
       skills: ["Python", "PyQt", "Numpy"],
-      media: "media/kinematics_preview.gif"
+      media: "media/kinematics_preview.gif",
     },
     /*
     {
@@ -36,7 +36,7 @@ export const siteConfig = {
         "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
       link: "https://extensionkit.io/?ref=devportfolio",
       skills: ["React", "Node.js", "AWS"],
-      media: "/media/test_gif.gif"
+      media: "media/test_gif.gif"
     },
     */
   ],
@@ -80,7 +80,7 @@ export const siteConfig = {
       dateRange: "2015 - 2020",
       achievements: [
         "Graduated with First Class Honours, Degree+, and Millennium Volunteers Award",
-        "<a href='https://gua.soutron.net/Portal/Default/en-GB/RecordView/Index/109' target='_blank' rel='noopener noreferrer'>Global Undergraduate Awards</a> & <a href='https://www.nafems.org/blog/posts/jonathan-jamison-uk-student-winner-2nd-prize-winner/?srsltid=AfmBOooUzbGys4Ro4OU3VTu_vsxBvFFtHfW-7YIQE6HK31lf5-bqyiiX' target='_blank' rel='noopener noreferrer'>IMechE Outstanding Project Award </a>received for final year project",
+        "<a href='https://gua.soutron.net/Portal/Default/en-GB/RecordView/Index/109' target='_blank' rel='noopener noreferrer'>Global Undergraduate Awards</a> & <a href='https://www.nafems.org/blog/posts/jonathan-jamison-uk-student-winner-2nd-prize-winner/?srsltid=AfmBOooUzbGys4Ro4OU3VTu_vsxBvFFtHfW-7YIQE6HK31lf5-bqyiiX' target='_blank' rel='noopener noreferrer'>IMechE Outstanding Project Award</a> received for final year project",
         "Suspension Team Leader & Assistant Performance Team Leader for Queen's Formula Racing team",
       ],
     },
