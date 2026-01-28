@@ -5,7 +5,11 @@ function init() {
       "passionate about Python.", 
       "silly about Simulink.", 
       "an F1 nerd.", 
-      "average at tennis."];
+      "average at tennis.",
+      "based in London.",
+      "an MX5 owner.",
+      "keen to collaborate.",
+      ];
       
     let textBox = document.querySelector('.text');
 
