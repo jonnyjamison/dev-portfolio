@@ -24,9 +24,9 @@ export const siteConfig = {
     {
       name: "Suspension Kinematics Viewer",
       description:
-        "GUI to view the suspension hardpoints of a double-wishbone suspension system and visualise features of the geometry",
+        "Development of GUI to visualise suspension hardpoints of a double-wishbone suspension system and calculate features of the geometry",
       link: "https://github.com/jonnyjamison/KinematicsViewer",
-      skills: ["PyQt", "Python", "Numpy"],
+      skills: ["Python", "PyQt", "Numpy"],
       media: "/media/kinematics_preview.gif"
     },
     {
@@ -44,9 +44,9 @@ export const siteConfig = {
       title: "Virtual Tools & Methods Engineer",
       dateRange: "Aug 2024 - Present",
       bullets: [
-        "DEvelop toolset - distibuted, best practises",
-        "Virtual Sensor project",
-        "Interact with bespoke vehicle model, extract results for high performance applications",
+        "Development and deployment of bespoke simulation and analysis tools to support product development",
+        "Lead engineer on Virtual Sensor project to replace physical component with a Machine Learning model",
+        "Apply bespoke vehicle models to generate actionable simulation insight for high-performance automotive applications",
       ],
     },
     {
@@ -54,9 +54,9 @@ export const siteConfig = {
       title: "Modelling and Simulation Engineer",
       dateRange: "Feb 2022 - Aug 2024",
       bullets: [
-        "Build and develop and correlate Digital Twin of vehicle using mathematical modelling",
-        "*link* Help Develop VSI through automation and optimisation scripts",
-        "Collaborated with product team to define technical requirements",
+        "Developed and correlated a Digital Twin of vehicles using mathematical modelling to support attribute development",
+        "Implemented automation and optimisation algorithms as part of Vehicle Simulation Interface (VSI)",
+        "Supported Driver-in-the-Loop activities through on-site experiment design, live coding, and model integration",
       ],
     },
     {
@@ -64,9 +64,9 @@ export const siteConfig = {
       title: "Application Engineer",
       dateRange: "Feb 2021 - Feb 2022",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Gained insight into industry through helping OEMs develop models and strategies for virtual testing",
+        "Worked with various automotive technologies including ADAS, EVs, DiL and HiL systems",
+        "Developed professional coding skills through implementing best practises, collaboration, and customer interactions",
       ],
     },
   ],
