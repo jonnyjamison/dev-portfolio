@@ -46,7 +46,7 @@ function init() {
             textBox.textContent = "";
             textBox.classList.remove("selected");
           }, 300);
-        }, 1500);
+        }, 1200);
       },
     });
 
