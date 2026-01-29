@@ -91,7 +91,7 @@ export const siteConfig = {
       achievements: [
         "Graduated with Distinction",
         "Scholarship received to further interest of Machine Learning developed during Masters degree",
-        "4 modules studied at Masters level, including: Big Data, Data Mining, Machine Learning, and Statistics",
+        "Modules studied at Masters level, including: Big Data & Infrastrucure, Machine Learning, Statistical Modelling & Data Mining",
       ],
     },
   ],

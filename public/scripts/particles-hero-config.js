@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
           out_mode: "out",
         },
         opacity: {
-          value: 0.45,
+          value: 0.4,
         },
         color: {
           /* match the site's accent color (softened by opacity/mix-blend) */
