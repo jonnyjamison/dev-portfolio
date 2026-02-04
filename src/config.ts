@@ -10,7 +10,7 @@ export const siteConfig = {
     leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
-    "A mechanical engineer with a passion for programming, combining the two through simulation, modelling, and machine-learning-enabled tools. With 5+ years within fast-paced startups, my work has spanned vehicle dynamics, virtual sensors, and digital twins, in an attempt to make code replicate reality!",
+    "Mechanical engineer with a passion for turning physics into software. Over 5+ years in fast-paced startups, I’ve built simulation, modelling, and machine-learning-enabled tools across vehicle dynamics, virtual sensors, and digital twins, making code replicate reality.",
   skills: ["Python", "MATLAB", "Simulink", "TensorFlow"],
   projects: [
     {
