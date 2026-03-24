@@ -10,7 +10,7 @@ export const siteConfig = {
     leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
-    "Mechanical engineer with a passion for programming. With over 5+ years in fast-paced startups, I’ve built simulation, modelling, and machine-learning-enabled tools across vehicle dynamics, virtual sensors, and digital twins, making code replicate reality.",
+    "Mechanical engineer with a passion for programming. With over 5+ years in fast-paced startups, I’ve built simulation, modelling, and machine-learning-enabled tools across vehicle dynamics, virtual sensors, and digital twins, making code replicate reality!",
   skills: ["Python", "MATLAB", "Simulink", "TensorFlow"],
   projects: [
     {
@@ -43,7 +43,7 @@ export const siteConfig = {
   experience: [
     {
       company: "ClearMotion",
-      title: "Virtual Tools & Methods Engineer",
+      title: "Modelling and Simulation Engineer",
       dateRange: "Aug 2024 - Present",
       bullets: [
         "Development and deployment of bespoke simulation and analysis tools to support product development using multiple technologies",
@@ -53,7 +53,7 @@ export const siteConfig = {
     },
     {
       company: "Rivian",
-      title: "Modelling and Simulation Engineer",
+      title: "Vehicle Modelling Engineer",
       dateRange: "Feb 2022 - Aug 2024",
       bullets: [
         "Top Talent Award recipient for outstanding performance in 2023",
@@ -64,7 +64,7 @@ export const siteConfig = {
     },
     {
       company: "IPG Automotive",
-      title: "Application Engineer",
+      title: "Application and Simulation Engineer",
       dateRange: "Feb 2021 - Feb 2022",
       bullets: [
         "Helped OEMs develop vehicle models and strategies for virtual testing as part of <a href='https://www.project-vivid.com/' target='_blank' rel='noopener noreferrer'>Project ViVID</a>",
