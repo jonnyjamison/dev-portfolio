@@ -19,7 +19,10 @@ function init() {
     "an F1 nerd.",
     "average at tennis.",
     "based in London.",
+    "building digital twins.",
+    "bridging physics and AI.",
     "an MX5 owner.",
+    "making code replicate reality.",
     "keen to collaborate.",
   ];
 

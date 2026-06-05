@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Jonny Jamison",
-  title: "Modelling, Simulation & Toolset Engineer",
+  title: "Software Engineer, Modelling & Simulation",
   description: "Portfolio website of Jonny Jamison",
   accentColor: "#00ff00",
   social: {
@@ -10,8 +10,8 @@ export const siteConfig = {
     leetcode: "https://leetcode.com/jonnyjamison",
   },
   aboutMe:
-    "Mechanical engineer with a passion for programming. With over 5+ years in fast-paced startups, I’ve built simulation, modelling, and machine-learning-enabled tools across vehicle dynamics, virtual sensors, and digital twins, making code replicate reality!",
-  skills: ["Python", "MATLAB", "Simulink", "TensorFlow"],
+    "Software and modelling engineer with a mechanical engineering background, building simulation, modelling, and machine-learning-enabled tools across dynamics, complex operational networks, virtual sensors, and digital twins - making code replicate reality!",
+  skills: ["Python", "NumPy", "Pandas", "scipy", "MATLAB", "Simulink", "TensorFlow", "AWS"],
   projects: [
     {
       name: "Spring-Mass-Damper ML Surrogate Model",
@@ -24,7 +24,7 @@ export const siteConfig = {
     {
       name: "Suspension Kinematics Viewer",
       description:
-        "Development of a Python-based GUI to visualise hardpoints of a double-wishbone suspension system and calculate features of the geometry",
+        "Development of a Python-based GUI to visualise .xls files containing hardpoints of a double-wishbone suspension system and calculate features of the geometry",
       link: "https://github.com/jonnyjamison/KinematicsViewer",
       skills: ["Python", "PyQt", "Numpy"],
       media: "media/kinematics_preview.gif",
@@ -42,9 +42,21 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Kallikor.ai",
+      website: "https://www.kallikor.ai/",
+      title: "Software Engineer, Modelling",
+      dateRange: "Mar 2026 - Present",
+      bullets: [
+        "Development of advanced Python-based modelling and simulation tools for large-scale digital twin applications",
+        "Transformation of multi-domain customer data into representative simulation flows for complex operational systems",
+        "Delivery of customer facing simulation analysis to support evidence-led decision-making for multi-billion-dollar enterprise clients",
+      ],
+    },
+    {
       company: "ClearMotion",
+      website: "https://www.clearmotion.com/",
       title: "Modelling and Simulation Engineer",
-      dateRange: "Aug 2024 - Present",
+      dateRange: "Aug 2024 - Mar 2026",
       bullets: [
         "Development and deployment of bespoke simulation and analysis tools to support product development using multiple technologies",
         "Lead engineer on Virtual Sensor project to replace physical component with a Machine Learning model",
@@ -53,6 +65,7 @@ export const siteConfig = {
     },
     {
       company: "Rivian",
+      website: "https://www.rivian.com/",
       title: "Vehicle Modelling Engineer",
       dateRange: "Feb 2022 - Aug 2024",
       bullets: [
@@ -64,6 +77,7 @@ export const siteConfig = {
     },
     {
       company: "IPG Automotive",
+      website: "https://ipg-automotive.com/",
       title: "Application and Simulation Engineer",
       dateRange: "Feb 2021 - Feb 2022",
       bullets: [
@@ -81,7 +95,7 @@ export const siteConfig = {
       achievements: [
         "Graduated with First Class Honours, Degree+, and Millennium Volunteers Award",
         "<a href='https://gua.soutron.net/Portal/Default/en-GB/RecordView/Index/109' target='_blank' rel='noopener noreferrer'>Global Undergraduate Awards</a> & <a href='https://www.nafems.org/blog/posts/jonathan-jamison-uk-student-winner-2nd-prize-winner/?srsltid=AfmBOooUzbGys4Ro4OU3VTu_vsxBvFFtHfW-7YIQE6HK31lf5-bqyiiX' target='_blank' rel='noopener noreferrer'>IMechE Outstanding Project Award</a> received for final year project",
-        "Suspension Team Leader & Assistant Performance Team Leader for Queen's Formula Racing team",
+        "Queen's Formula Racing team Suspension Team Leader & Assistant Performance Team Leader",
       ],
     },
     {
