@@ -47,10 +47,11 @@ export const siteConfig = {
       title: "Software Engineer, Modelling",
       dateRange: "Mar 2026 - Present",
       bullets: [
+        "<a href='https://businesscloud.co.uk/news/kallikor-first-firm-to-spin-out-of-metaverse-pioneer-improbable/' target='_blank' rel='noopener noreferrer'>Improbable Worlds spin out</a>, applying technology proven in large-scale virtual-world and defence simulation to high-value enterprise operations",
         "Development of advanced Python-based modelling and simulation tools for large-scale digital twin applications",
         "Transformation of multi-domain customer data into representative simulation flows for complex operational systems",
-        "Delivery of customer facing simulation analysis to support evidence-led decision-making for multi-billion-dollar enterprise clients",
-      ],
+        "Delivery of customer facing simulation analysis to support <a href='https://kallikor.ai/from-battlefield-to-boardroom-what-defence-simulation-teaches-supply-chain-leaders-about-decision-making/' target='_blank' rel='noopener noreferrer'>evidence-led decision-making</a> for multi-billion-dollar enterprise clients",
+      ], 
     },
     {
       company: "ClearMotion",
